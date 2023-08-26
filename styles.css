@@ -6,12 +6,13 @@
     padding: 0px;
     font-family: 'Poppins', sans-serif;
 }
+
 /* body{
     width: 1366px;
     height: 4000px;
 } */
 
-/* hero/header----------------------------------------------------------------------- */
+/* hero/header------------------------------------------- */
 .header
 {
     /* width: 1907px;
@@ -23,7 +24,14 @@
 }
 .header-container{
     /* width: 70%; */
-   margin-inline: 150px;
+   padding-inline: 150px;
+}
+@media screen and (max-width: 480px) {
+    .header-container{
+        /* width: 70%; */
+       padding-inline: 10px;
+    }
+     
 }
 
 /* navbar --------------------------------------------------*/
@@ -83,6 +91,7 @@ nav{
 
 }
 
+
 /* hero-info --------------------------------------------------*/
 .hero-info{
     margin-block: 150px;
@@ -114,6 +123,7 @@ nav{
 }
 .hero-info-p{
     color: #84828f;
+    line-height: 0.8rem;
 }
 .hero-info-btn{
     height: 50px;
@@ -123,4 +133,40 @@ nav{
     background-color: #F94A3D;
     border-radius: 10px;
     font-size: small;
+}
+
+/* catalogue----------------------------------------- */
+.catl-container-main{
+
+}
+.why-we-div{
+}
+.why-we-text-bold{
+    color: #212244;
+    font-size: 40px;
+    font-weight: 600;
+}
+.why-we-text-para{
+    color: #84828f;
+    line-height: 0.8rem;
+}
+.why-we-cards{
+    width: 280px;
+    height: 330px;
+    border: 1px solid;
+    padding: 40px;
+    padding-top: 80px;
+}
+.why-we-cards-images{
+    /* parent */
+    position: relative;
+    margin-bottom: 0;
+}
+.why-we-cards-pic1{
+    position: relative;
+}
+.why-we-cards-pic2{
+    position: absolute;
+    top:-35%;
+    right: -10%;
 }
