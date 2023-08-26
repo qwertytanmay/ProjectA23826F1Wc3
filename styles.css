@@ -29,7 +29,7 @@
 @media screen and (max-width: 480px) {
     .header-container{
         /* width: 70%; */
-       padding-inline: 10px;
+       padding-inline: 50px;
     }
      
 }
@@ -89,6 +89,16 @@ nav{
     border-radius: 5px;
     font-size: small;
 
+}
+
+@media screen and (max-width: 480px) {
+    nav,.nav-mid-div,.nav-right-div{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .nav-right-div>button, .nav-right-div>i{
+        margin-top: 20px;       
+    }
 }
 
 
