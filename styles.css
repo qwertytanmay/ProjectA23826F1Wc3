@@ -4,6 +4,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
+  color: #212244;
 }
 
 /* body{
@@ -146,12 +147,15 @@ nav {
 
 /* catalogue----------------------------------------- */
 .catl-container-main {
+    margin-bottom: 150px;
 }
 .why-we-div {
+    margin-top: 70px;
 }
 .why-we-text {
   /* width: 290px; */
   margin-right: 30px;
+  margin-top: 10px;
 }
 .why-we-text-bold {
   color: #212244;
@@ -204,10 +208,104 @@ border-radius: 20px;
 }
 
 .menu-div{
-    border-bottom: 1px solid rgb(219, 219, 219);
+    /* border-bottom: 1px solid rgb(219, 219, 219); */
+    margin-top: 35px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.menu-heading{
+    color: #212244;
+    font-size: 41px;
+    font-weight: 600;
+    margin-bottom: 37px;
 }
 .menu-list{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.menu-list>li{
+    color: #212244;
     list-style-type: none;
     text-transform: capitalize;
+    font-weight: 550;
+    font-size: 15px;
+    margin-inline: 18px;
+    padding-bottom: 6px;
+    cursor:default;
+    border-bottom: 3px solid transparent;
+}
+.menu-list>li:hover{
+  color: #f94a3d;
+  border-bottom: 3px solid #fd6e64;
 }
 
+.menu-cards-div{
+    margin-top:0px;
+    padding-top: 90px;
+    border-top: 1px solid rgb(214, 214, 214);
+}
+.menu-card{
+    width: 280px;
+    height: 330px;
+    border: 1px solid;
+    /* padding: 40px; */
+    /* padding-top: 40px; */
+    margin-inline: 15px;
+  
+    /* gradient border */
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient( transparent, #e0e0e0) border-box;
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+.menu-card:hover{
+    /* gradient border */
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient( transparent, #ffcf04) border-box;
+border-radius: 20px;
+}
+.menu-card>img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+.menu-card-ratings{
+    margin-bottom:10px;
+}
+.menu-card-ratings>img{
+    width: 14px;
+    height: 13px;
+    margin-inline: 3px;
+    cursor: pointer;
+}
+.menu-card>h4{
+    color: #212244;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.menu-card>p{
+  color: #84828f;
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+.menu-card>p>span{
+  color: #f94a3d;
+  font-weight: 600;
+}
+.menu-card-btn{
+    width: 110px;
+    height: 35px;
+    border: 1.5px solid #f94a3d;
+    background-color: white;
+    color: #f94a3d;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.menu-card-btn:hover{
+    background-color: #f94a3d;
+    color: white;
+    font-size: 12px;
+
+}
