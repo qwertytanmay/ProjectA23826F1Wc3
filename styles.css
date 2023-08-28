@@ -5,6 +5,7 @@
   padding: 0px;
   font-family: "Poppins", sans-serif;
   color: #212244;
+  cursor: default;
 }
 
 /* body{
@@ -23,7 +24,7 @@
 }
 .header-container {
   /* width: 70%; */
-  padding-inline: 150px;
+  margin-inline: 150px;
 }
 @media screen and (max-width: 480px) {
   .header-container {
@@ -36,6 +37,8 @@
 nav {
   background-image: url(./resources/hero.jpg);
   background-repeat: no-repeat;
+  position: sticky;
+  top: 0px;
 }
 .logo {
   width: 150px;
@@ -147,10 +150,10 @@ nav {
 
 /* catalogue----------------------------------------- */
 .catl-container-main {
-    margin-bottom: 150px;
+  margin-bottom: 70px;
 }
 .why-we-div {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 .why-we-text {
   /* width: 290px; */
@@ -169,8 +172,8 @@ nav {
 .why-we-cards-div {
 }
 .why-we-cards {
-  width: 280px;
-  height: 330px;
+  width: 250px;
+  height: 360px;
   border: 1px solid;
   padding: 40px;
   padding-top: 40px;
@@ -178,15 +181,15 @@ nav {
 
   /* gradient border */
   background: linear-gradient(white, white) padding-box,
-    linear-gradient( transparent, #ececec) border-box;
+    linear-gradient(transparent, #ececec) border-box;
   border-radius: 20px;
-  border: 4px solid transparent;
+  border: 3px solid transparent;
 }
-.why-we-cards:hover{
-    /* gradient border */
+.why-we-cards:hover {
+  /* gradient border */
   background: linear-gradient(white, white) padding-box,
-  linear-gradient( transparent, #ffcf04) border-box;
-border-radius: 20px;
+    linear-gradient(transparent, #ffcf04) border-box;
+  border-radius: 20px;
 }
 
 .why-we-cards-images {
@@ -202,110 +205,263 @@ border-radius: 20px;
   top: -35%;
   right: -10%;
 }
-.why-we-cards>h3{
-    font-size: 26px;
-    font-weight: 600;
+.why-we-cards > h3 {
+  font-size: 26px;
+  font-weight: 600;
 }
 
-.menu-div{
-    /* border-bottom: 1px solid rgb(219, 219, 219); */
-    margin-top: 35px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+.menu-div {
+  /* border-bottom: 1px solid rgb(219, 219, 219); */
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
-.menu-heading{
-    color: #212244;
-    font-size: 41px;
-    font-weight: 600;
-    margin-bottom: 37px;
+.menu-heading {
+  color: #212244;
+  font-size: 41px;
+  font-weight: 600;
+  margin-bottom: 37px;
 }
-.menu-list{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+.menu-list {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
-.menu-list>li{
-    color: #212244;
-    list-style-type: none;
-    text-transform: capitalize;
-    font-weight: 550;
-    font-size: 15px;
-    margin-inline: 18px;
-    padding-bottom: 6px;
-    cursor:default;
-    border-bottom: 3px solid transparent;
+.menu-list > li {
+  color: #212244;
+  list-style-type: none;
+  text-transform: capitalize;
+  font-weight: 550;
+  font-size: 15px;
+  margin-inline: 18px;
+  padding-bottom: 6px;
+  cursor: default;
+  border-bottom: 3px solid transparent;
 }
-.menu-list>li:hover{
+.menu-list > li:hover {
   color: #f94a3d;
   border-bottom: 3px solid #fd6e64;
 }
 
-.menu-cards-div{
-    margin-top:0px;
-    padding-top: 90px;
-    border-top: 1px solid rgb(214, 214, 214);
+.menu-cards-div {
+  margin-top: 0px;
+  padding-top: 90px;
+  margin-bottom: 60px;
+  border-top: 1px solid rgb(214, 214, 214);
 }
-.menu-card{
-    width: 280px;
-    height: 330px;
-    border: 1px solid;
-    /* padding: 40px; */
-    /* padding-top: 40px; */
-    margin-inline: 15px;
-  
-    /* gradient border */
-    background: linear-gradient(white, white) padding-box,
-      linear-gradient( transparent, #e0e0e0) border-box;
-    border-radius: 20px;
-    border: 3px solid transparent;
-}
-.menu-card:hover{
-    /* gradient border */
+.menu-card {
+  width: 240px;
+  height: 330px;
+  border: 1px solid;
+  /* padding: 40px; */
+  /* padding-top: 40px; */
+  margin-inline: 15px;
+
+  /* gradient border */
   background: linear-gradient(white, white) padding-box,
-  linear-gradient( transparent, #ffcf04) border-box;
-border-radius: 20px;
+    linear-gradient(transparent, #e0e0e0) border-box;
+  border-radius: 20px;
+  border: 2px solid transparent;
 }
-.menu-card>img{
-    width: 150px;
-    height: 150px;
-    margin-bottom: 15px;
+.menu-card:hover {
+  /* gradient border */
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(transparent, #ffcf04) border-box;
+  border-radius: 20px;
 }
-.menu-card-ratings{
-    margin-bottom:10px;
+.menu-card > img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
 }
-.menu-card-ratings>img{
-    width: 14px;
-    height: 13px;
-    margin-inline: 3px;
-    cursor: pointer;
+.menu-card-ratings {
+  margin-bottom: 10px;
 }
-.menu-card>h4{
-    color: #212244;
-    font-size: 17px;
-    font-weight: 700;
-    margin-top: 5px;
+.menu-card-ratings > img {
+  width: 14px;
+  height: 13px;
+  margin-inline: 3px;
+  cursor: pointer;
 }
-.menu-card>p{
+.menu-card > h4 {
+  color: #212244;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.menu-card > p {
   color: #84828f;
   font-size: 18px;
   margin-bottom: 13px;
 }
-.menu-card>p>span{
+.menu-card > p > span {
   color: #f94a3d;
   font-weight: 600;
 }
-.menu-card-btn{
-    width: 110px;
-    height: 35px;
-    border: 1.5px solid #f94a3d;
-    background-color: white;
-    color: #f94a3d;
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 8px;
+.menu-card-btn {
+  width: 110px;
+  height: 35px;
+  border: 1.5px solid #f94a3d;
+  background-color: white;
+  color: #f94a3d;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
 }
-.menu-card-btn:hover{
-    background-color: #f94a3d;
-    color: white;
-    font-size: 12px;
+.menu-card-btn:hover {
+  background-color: #f94a3d;
+  color: white;
+  font-size: 12px;
+}
 
+/* Testimony----------------------------------------- */
+.testimony {
+  background-color: #f8f8f8;
+  padding-block: 140px;
 }
+.testi-container-main {
+  margin-inline: 150px;
+}
+.testi-users-list-div {
+  margin-top: 5px;
+  width: 350px;
+}
+.testi-user-review-container {
+  width: 500px;
+}
+.testi-user-card {
+  width: 360px;
+  height: 80px;
+  /* border: 1px solid; */
+  border-radius: 12px;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.testi-user-card > img {
+  width: 64px;
+  height: 64px;
+}
+.testi-user-card-text {
+  padding-left: 25px;
+}
+.testi-user-card-text > h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.testi-user-card-text > p {
+  font-size: 13px;
+  color: #84828f;
+}
+.testi-user-card:hover {
+  background-color: white;
+  box-shadow: 0 0 50px #e5e3f3;
+  cursor: default;
+}
+.testi-vscroll-bar-img{
+  height: 350px;
+}
+.testi-user-review-heading-1 {
+  color: #212244;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.testi-user-review-heading-2 {
+  color: #f94a3d;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.testi-user-review-user-card{
+  border-left: 3px solid #f94a3d;
+  height: 50px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+.testi-user-review-user-card>h5{
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.testi-user-review-user-card-row-2>p{
+  margin-bottom: 0px;
+  color: #84828f;
+  font-size: 14px;
+}
+.testi-user-review-user-card-row-2-stars >img{
+  width: 14px;
+  height: 14px;
+}
+.testi-user-review-sayings{
+  margin-top: 10px;
+  border-top: 1px solid rgb(224, 224, 224);
+  padding-top: 20px;
+  color: #84828f;
+  font-size: 16px;
+}
+
+/* Available Platform--------------------------------- */
+.available-paltform-container{
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+.available-paltform-container>img{
+  width: 1070px;
+  height: 521px;
+  cursor: pointer;
+}
+
+/* Footer-------------------------------------------------- */
+
+.footer{
+  padding-left: 140px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  /* height: 250px; */
+  background-image: url("./resources/img\ \(2\)\ -\ Copy.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+.footer-left{
+  width: 220px;
+}
+.footer-left-logo{
+  width: 114px;
+  height: 22px;
+  cursor: pointer;
+}
+.footer-left>p{
+  margin-top: 25px;
+  margin-bottom: 0px;
+  color: #84828f;
+  font-size: 12px;
+}
+.social-div{
+  margin-top: 30px;
+}
+.social-div>img{
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.footer-right{
+  border-style: none ;
+  border: none;
+}
+td,th{
+  padding-right: 130px;
+}
+th{
+  margin-top: 0px;
+  padding-bottom: 24px;
+  font-size: 14px;
+}
+td{
+  color: #84828f;
+  font-size: 12px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+
